@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+ * Design System — Hotel Reservation
+ * Paleta: Verde (natureza/hospitalidade) + Azul (confiança/profissionalismo)
+ * Todas as cores em HSL conforme padrão do projeto.
+ */
+
+@layer base {
+  :root {
+    --background: 140 20% 98%;
+    --foreground: 210 30% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 30% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 30% 12%;
+
+    /* Verde escuro — ação principal */
+    --primary: 152 45% 28%;
+    --primary-foreground: 0 0% 98%;
+
+    /* Azul claro — elementos secundários */
+    --secondary: 200 30% 94%;
+    --secondary-foreground: 200 40% 20%;
+
+    --muted: 140 15% 95%;
+    --muted-foreground: 210 12% 46%;
+
+    /* Azul — destaques e acentos */
+    --accent: 200 55% 92%;
+    --accent-foreground: 200 45% 22%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 140 15% 88%;
+    --input: 140 15% 88%;
+    --ring: 152 45% 28%;
+
+    --radius: 0.5rem;
+
+    /* Tokens semânticos para status de quartos */
+    --status-available: 142 71% 45%;
+    --status-occupied: 200 80% 50%;
+    --status-maintenance: 38 92% 50%;
+    --status-cleaning: 280 60% 55%;
+
+    --sidebar-background: 152 30% 97%;
+    --sidebar-foreground: 210 25% 20%;
+    --sidebar-primary: 152 45% 28%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 152 25% 92%;
+    --sidebar-accent-foreground: 152 40% 18%;
+    --sidebar-border: 140 15% 88%;
+    --sidebar-ring: 152 45% 28%;
+  }
+
+  .dark {
+    --background: 210 30% 8%;
+    --foreground: 140 15% 95%;
+
+    --card: 210 25% 11%;
+    --card-foreground: 140 15% 95%;
+
+    --popover: 210 25% 11%;
+    --popover-foreground: 140 15% 95%;
+
+    --primary: 152 50% 45%;
+    --primary-foreground: 210 30% 8%;
+
+    --secondary: 200 25% 18%;
+    --secondary-foreground: 200 20% 90%;
+
+    --muted: 210 20% 16%;
+    --muted-foreground: 210 12% 60%;
+
+    --accent: 200 30% 20%;
+    --accent-foreground: 200 20% 90%;
+
+    --destructive: 0 62% 35%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 20% 18%;
+    --input: 210 20% 18%;
+    --ring: 152 50% 45%;
+
+    --status-available: 142 60% 40%;
+    --status-occupied: 200 70% 45%;
+    --status-maintenance: 38 80% 45%;
+    --status-cleaning: 280 50% 50%;
+
+    --sidebar-background: 210 28% 10%;
+    --sidebar-foreground: 140 10% 90%;
+    --sidebar-primary: 152 50% 45%;
+    --sidebar-primary-foreground: 210 30% 8%;
+    --sidebar-accent: 210 20% 15%;
+    --sidebar-accent-foreground: 140 10% 90%;
+    --sidebar-border: 210 20% 18%;
+    --sidebar-ring: 152 50% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
