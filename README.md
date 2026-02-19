@@ -33,3 +33,20 @@ Dada a natureza do fluxo de trabalho (múltiplos prompts por interação), a ras
 * **Conteúdo do Commit:** Cada commit registra todos os artefatos produzidos ou modificados, além do respectivo arquivo de output, representando o estado final daquela etapa do protocolo.
 
 ---
+
+## 🛠️ Estrutura de Stacks e Evolução
+
+O protocolo experimental previa a exploração de duas frentes tecnológicas (Stacks) distintas. No entanto, devido às características nativas da ferramenta **Lovable**, que é otimizada para o desenvolvimento Web moderno baseado em TypeScript, o experimento foi conduzido da seguinte forma:
+
+### Stack 1 (Executada)
+Esta é a stack principal e única suportada pela ferramenta neste experimento.
+* **Ambiente de Execução:** Node.js (Gerenciamento de dependências via NPM/Package.json).
+* **Tecnologias:** React (Frontend), TypeScript (Linguagem), Tailwind CSS (Estilização) e integração com Supabase (BaaS).
+* **Abrangência:** Todas as etapas documentadas neste repositório (da Etapa 1 à Etapa 7) foram realizadas utilizando esta stack.
+
+### Stack 2 (Não Suportada)
+A **Stack 2** (Java / Spring Boot) foi classificada como **"Fora do Escopo"** para esta ferramenta.
+* **Justificativa:** O Lovable opera sob um modelo de geração de código opinativo e automatizado estritamente voltado para ecossistemas baseados em Node.js/React. Portanto, não foi possível realizar a comparação multiplataforma dentro desta ferramenta específica.
+
+---
+
